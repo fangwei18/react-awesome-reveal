@@ -43,36 +43,7 @@ module.exports = {
     },
     footer: {
       style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Introduction",
-              to: "/docs/intro",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Twitter",
-              href: "https://twitter.com/morellodev",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "GitHub",
-              href: pkg.repository.url,
-            },
-          ],
-        },
-      ],
-      copyright: `Copyleft <span class="copyleft">&copy;</span> ${new Date().getFullYear()} Dennis Morello`,
+      copyright: `Copyleft <span class="copyleft"></span> ${new Date().getFullYear()} Dennis Morello`,
     },
   },
   presets: [
@@ -87,11 +58,14 @@ module.exports = {
         },
         blog: false,
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve("./src/css/index.scss"),
         },
       },
     ],
   ],
-  plugins: [require.resolve("docusaurus-lunr-search")],
+  plugins: [
+    "docusaurus-plugin-sass",
+    require.resolve("docusaurus-lunr-search"),
+  ],
   themes: ["@docusaurus/theme-live-codeblock"],
 };
