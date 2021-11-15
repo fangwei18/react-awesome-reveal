@@ -29,6 +29,7 @@ import {
   fadeOutUp,
   fadeOutUpBig
 } from "../animations/fading_exits";
+import {setDistance} from "../utils/distance";
 
 type FadeDirection =
   | "bottom-left"
@@ -56,6 +57,8 @@ interface FadeProps extends Omit<RevealProps, "keyframes" | "css"> {
    * @default false
    */
   reverse?: boolean;
+
+  customDistance: string;
 }
 
 function getFadeKeyframes(
@@ -113,8 +116,12 @@ const Fade: React.FC<FadeProps> = ({
   big = false,
   direction,
   reverse = false,
+    customDistance = undefined,
   ...otherProps
 }) => {
+  if (customDistance) {
+    setDistance(customDistance)
+  }
   return (
     <Reveal
       keyframes={getFadeKeyframes(big, reverse, direction)}

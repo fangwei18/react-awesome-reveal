@@ -1,4 +1,5 @@
 import { keyframes } from "@emotion/react";
+import {getDistance} from "../../utils/distance";
 
 /**
  * @see {@link https://github.com/animate-css/animate.css/blob/master/source/fading_exits/fadeOutBottomRight.css}
@@ -11,7 +12,7 @@ const fadeOutBottomRight = keyframes`
 
   to {
     opacity: 0;
-    transform: translate3d(100%, 100%, 0);
+    transform: translate3d(${getDistance()}, ${getDistance()}, 0);
   }
 `;
 

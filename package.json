@@ -47,11 +47,6 @@
   "peerDependencies": {
     "react": ">=16.14.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
   "size-limit": [
     {
       "path": "dist/react-awesome-reveal.cjs.production.min.js",

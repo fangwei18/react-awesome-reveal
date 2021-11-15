@@ -1,4 +1,5 @@
 import { keyframes } from "@emotion/react";
+import {getDistance} from "../../utils/distance";
 
 /**
  * @see {@link https://github.com/animate-css/animate.css/blob/master/source/fading_entrances/fadeInTopLeft.css}
@@ -6,7 +7,7 @@ import { keyframes } from "@emotion/react";
 const fadeInTopLeft = keyframes`
   from {
     opacity: 0;
-    transform: translate3d(-100%, -100%, 0);
+    transform: translate3d(-${getDistance()}, -${getDistance()}, 0);
   }
 
   to {

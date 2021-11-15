@@ -1,4 +1,5 @@
 import { keyframes } from "@emotion/react";
+import {getDistance} from "../../utils/distance";
 
 /**
  * @see {@link https://github.com/animate-css/animate.css/blob/master/source/fading_entrances/fadeInDown.css}
@@ -6,7 +7,7 @@ import { keyframes } from "@emotion/react";
 const fadeInDown = keyframes`
   from {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, ${getDistance()}, 0);
   }
 
   to {

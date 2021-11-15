@@ -1,4 +1,5 @@
 import { keyframes } from "@emotion/react";
+import {getDistance} from "../../utils/distance";
 
 /**
  * @see {@link https://github.com/animate-css/animate.css/blob/master/source/specials/rollOut.css}
@@ -10,7 +11,7 @@ const rollOut = keyframes`
 
   to {
     opacity: 0;
-    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    transform: translate3d(${getDistance()}, 0, 0) rotate3d(0, 0, 1, 120deg);
   }
 `;
 
