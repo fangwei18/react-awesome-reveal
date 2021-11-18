@@ -7,7 +7,7 @@ import {getDistance} from "../../utils/distance";
 const fadeInLeft = keyframes`
   from {
     opacity: 0;
-    transform: translate3d(${getDistance()}, 0, 0);
+    transform: translate3d(-${getDistance()}, 0, 0);
   }
 
   to {

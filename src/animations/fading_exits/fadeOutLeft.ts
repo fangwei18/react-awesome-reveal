@@ -11,7 +11,7 @@ const fadeOutLeft = keyframes`
 
   to {
     opacity: 0;
-    transform: translate3d(${getDistance()}, 0, 0);
+    transform: translate3d(-${getDistance()}, 0, 0);
   }
 `;
 

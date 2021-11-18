@@ -59,7 +59,7 @@ var _templateObject;
  * @see {@link https://github.com/animate-css/animate.css/blob/master/source/fading_entrances/fadeInLeft.css}
  */
 
-var fadeInLeft = /*#__PURE__*/keyframes(_templateObject || (_templateObject = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    opacity: 0;\n    transform: translate3d(", ", 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n"])), /*#__PURE__*/getDistance());
+var fadeInLeft = /*#__PURE__*/keyframes(_templateObject || (_templateObject = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    opacity: 0;\n    transform: translate3d(-", ", 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n"])), /*#__PURE__*/getDistance());
 
 function isEmpty(object) {
   return object === null || object === undefined;
@@ -553,7 +553,7 @@ var _templateObject$t;
  * @see {@link https://github.com/animate-css/animate.css/blob/master/source/fading_entrances/fadeInDown.css}
  */
 
-var fadeInDown = /*#__PURE__*/keyframes(_templateObject$t || (_templateObject$t = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    opacity: 0;\n    transform: translate3d(0, ", ", 0);\n  }\n\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n"])), /*#__PURE__*/getDistance());
+var fadeInDown = /*#__PURE__*/keyframes(_templateObject$t || (_templateObject$t = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0);\n  }\n\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n"])));
 
 var _templateObject$u;
 /**
@@ -602,7 +602,7 @@ var _templateObject$A;
  * @see {@link https://github.com/animate-css/animate.css/blob/master/source/fading_entrances/fadeInUp.css}
  */
 
-var fadeInUp = /*#__PURE__*/keyframes(_templateObject$A || (_templateObject$A = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    opacity: 0;\n    transform: translate3d(0, ", ", 0);\n  }\n\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n"])), /*#__PURE__*/getDistance());
+var fadeInUp = /*#__PURE__*/keyframes(_templateObject$A || (_templateObject$A = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    opacity: 0;\n    transform: translate3d(0, 100%, 0);\n  }\n\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n"])));
 
 var _templateObject$B;
 /**
@@ -637,7 +637,7 @@ var _templateObject$F;
  * @see {@link https://github.com/animate-css/animate.css/blob/master/source/fading_exits/fadeOutDown.css}
  */
 
-var fadeOutDown = /*#__PURE__*/keyframes(_templateObject$F || (_templateObject$F = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    transform: translate3d(0, ", ", 0);\n  }\n"])), /*#__PURE__*/getDistance());
+var fadeOutDown = /*#__PURE__*/keyframes(_templateObject$F || (_templateObject$F = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    transform: translate3d(0, 100%, 0);\n  }\n"])));
 
 var _templateObject$G;
 /**
@@ -651,7 +651,7 @@ var _templateObject$H;
  * @see {@link https://github.com/animate-css/animate.css/blob/master/source/fading_exits/fadeOutLeft.css}
  */
 
-var fadeOutLeft = /*#__PURE__*/keyframes(_templateObject$H || (_templateObject$H = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    transform: translate3d(", ", 0, 0);\n  }\n"])), /*#__PURE__*/getDistance());
+var fadeOutLeft = /*#__PURE__*/keyframes(_templateObject$H || (_templateObject$H = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    transform: translate3d(-", ", 0, 0);\n  }\n"])), /*#__PURE__*/getDistance());
 
 var _templateObject$I;
 /**
@@ -693,7 +693,7 @@ var _templateObject$N;
  * @see {@link https://github.com/animate-css/animate.css/blob/master/source/fading_exits/fadeOutUp.css}
  */
 
-var fadeOutUp = /*#__PURE__*/keyframes(_templateObject$N || (_templateObject$N = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    transform: translate3d(0, ", ", 0);\n  }\n"])), /*#__PURE__*/getDistance());
+var fadeOutUp = /*#__PURE__*/keyframes(_templateObject$N || (_templateObject$N = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0);\n  }\n"])));
 
 var _templateObject$O;
 /**
@@ -1024,7 +1024,7 @@ var _templateObject$19;
  * @see {@link https://github.com/animate-css/animate.css/blob/master/source/sliding_entrances/slideInUp.css}
  */
 
-var slideInUp = /*#__PURE__*/keyframes(_templateObject$19 || (_templateObject$19 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    transform: translate3d(0, ", ", 0);\n    visibility: visible;\n  }\n\n  to {\n    transform: translate3d(0, 0, 0);\n  }\n"])), /*#__PURE__*/getDistance());
+var slideInUp = /*#__PURE__*/keyframes(_templateObject$19 || (_templateObject$19 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  from {\n    transform: translate3d(0, 100%, 0);\n    visibility: visible;\n  }\n\n  to {\n    transform: translate3d(0, 0, 0);\n  }\n"])));
 
 var _templateObject$1a;
 /**

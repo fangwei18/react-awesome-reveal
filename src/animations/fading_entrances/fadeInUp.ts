@@ -1,5 +1,4 @@
 import { keyframes } from "@emotion/react";
-import {getDistance} from "../../utils/distance";
 
 /**
  * @see {@link https://github.com/animate-css/animate.css/blob/master/source/fading_entrances/fadeInUp.css}
@@ -7,7 +6,7 @@ import {getDistance} from "../../utils/distance";
 const fadeInUp = keyframes`
   from {
     opacity: 0;
-    transform: translate3d(0, ${getDistance()}, 0);
+    transform: translate3d(0, 100%, 0);
   }
 
   to {

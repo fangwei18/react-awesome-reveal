@@ -58,7 +58,7 @@ interface FadeProps extends Omit<RevealProps, "keyframes" | "css"> {
    */
   reverse?: boolean;
 
-  customDistance: string;
+  customDistance?: string;
 }
 
 function getFadeKeyframes(

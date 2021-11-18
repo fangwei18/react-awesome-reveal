@@ -17,7 +17,7 @@ interface FadeProps extends Omit<RevealProps, "keyframes" | "css"> {
      * @default false
      */
     reverse?: boolean;
-    customDistance: string;
+    customDistance?: string;
 }
 declare const Fade: React.FC<FadeProps>;
 export default Fade;
